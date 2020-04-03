@@ -2,6 +2,15 @@ package com.company;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Pangram.isPangram("The quick brown fox jumps over the lazy dog."));
+        int[][][] gliders = {
+                {{1,0,0},
+                {0,1,1},
+                {1,1,0}},
+                {{0,1,0},
+                {0,0,1},
+                {1,1,1}}
+        };
+
+        ConwayLife.getGeneration(gliders[0], 3);
     }
 }
